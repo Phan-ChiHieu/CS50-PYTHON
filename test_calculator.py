@@ -1,6 +1,5 @@
 from caculator2 import square
 
-
 def main():
     test_square()
 
@@ -13,30 +12,36 @@ def main():
 
 
 def test_square():
-    try:
-        assert square(2) == 4
-    except AssertionError:
-        print("2 square was not 4")
-    try:
-        assert square(3) == 9
-    except AssertionError:
-        print("3 square was not 9")
-    try:
-        assert square(-3) == 9
-    except AssertionError:
-        print("-3 square was not 9")
-    try:
-        assert square(0) == 0
-    except AssertionError:
-        print("0 square was not 0")
+    # try:
+    #     assert square(2) == 4
+    # except AssertionError:
+    #     print("2 square was not 4")
+    # try:
+    #     assert square(3) == 9
+    # except AssertionError:
+    #     print("3 square was not 9")
+    # try:
+    #     assert square(-3) == 9
+    # except AssertionError:
+    #     print("-3 square was not 9")
+    # try:
+    #     assert square(0) == 0
+    # except AssertionError:
+    #     print("0 square was not 0")
+
+    assert square(2) == 4
+    assert square(3) == 9
+    assert square(-2) == 4
+    assert square(-2) == 9
+    assert square(0) == 0
 
 
-def square(n):
-    return n + n
+# def square(n):
+#     return n + n
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+main()
 
 
 # 6:26
